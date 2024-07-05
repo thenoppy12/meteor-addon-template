@@ -16,8 +16,3 @@ jobs:
           distribution: adopt
       - name: Build with Gradle
         run: ./gradlew build
-      - name: Release
-        uses: actions/upload-artifact@v4
-        with:
-          name: Artifacts
-          path: build/libs/
